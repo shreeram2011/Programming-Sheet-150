@@ -40,3 +40,21 @@ public class CheckPrime {
         checkPrime2(num);
     }
 }
+
+
+//Another method to make code shorter and clean with the help of ternary operator
+public class CheckPrime
+{
+	public static void main(String[] args) {
+		int n = new Scanner(System.in).nextInt();
+		
+        System.out.print(n + (isPrime(n) ? " is a Prime no." : " is not a Prime no."));
+	}
+	
+	static boolean isPrime(int n){
+	    if(n <= 1) return false;
+	    for(int i = 2; i <= Math.sqrt(n); i ++)
+	        if(n % i == 0) return false;
+	    return true;
+	}
+}
