@@ -20,3 +20,12 @@ public class LeapYears {
         checkLeapYear(year);
     }
 }
+
+
+//to make it more short and clean with the help of ternary operator
+public class LeapYears{
+    public static void main(String args[]){
+        int year = new Scanner(System.in).nextInt();
+        System.out.print(year + ((year % 4 == 0 && year % 100 != 0 || year % 400 ==0) ? " is a Leap Year." : " is not a Leap year."));
+    }
+}
