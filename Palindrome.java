@@ -29,3 +29,13 @@ public class Palindrome {
         isPalindrome(str);
     }
 }
+
+
+//Another method for clean and short code
+public class Palindrome {
+    public static void main(String[] args) {
+        String str = new Scanner(System.in).nextLine().replaceAll(" ","").toLowerCase();
+        System.out.print(str.equals(new StringBuilder(str).reverse().toString()) ? "Palindrome" : "not a Palindrome.");
+    }
+}
+
