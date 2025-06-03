@@ -36,3 +36,21 @@ public class ArmstronNumber {
         isArmstrong(num);
     }
 }
+
+
+//Another method to make it more clean and short
+
+public class ArmstronNumber{
+    public static void main(String args[]){
+        int num = new Scanner(System.in).nextInt(), sum = 0, temp = num, n = (num + "").length();
+        
+        while(temp != 0){
+            int r = temp % 10;
+            sum += Math.pow(r,n);
+            temp = temp / 10;
+        }
+        
+        System.out.print(num + (sum == num ? " is an Armstrong no." : " is not an Armstrong no."));
+        
+    }
+}
