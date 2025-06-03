@@ -23,3 +23,16 @@ public class EvenOdd {
         checkOddEven(num);
     }
 }
+
+
+// Another way to solve without using function that is ternary operator
+
+
+public class EvenOdd
+{
+	public static void main(String[] args) {
+		int n = new Scanner(System.in).nextInt();
+		
+		System.out.print(n + " is " + (n % 2 == 0 ? "Even" : "Odd"));
+	}
+}
